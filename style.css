@@ -1,0 +1,72 @@
+h1{
+ text-align:center;
+}
+
+
+.navbar{
+position:sticky;
+top:0;
+background:white(255, 255, 255, 0.94);
+backdrop-filter:blur(8px);
+z-index:1000;
+padding:12px 0;
+border-bottom:1px solid var(--line);
+box-shadow: 0 6px 18px black(15, 23, 42, 0.04);
+overflow-x:auto;
+scrollbar-width:thin;
+}
+
+.navbar ul { 
+list-style-type:none;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 1px;
+background-color:grey;
+padding:0;
+margin:0;
+display:flex;
+justify-content:center;
+overflow:hidden;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+padding:15px;
+display:block;
+text-align:center;
+}
+
+.navbar a:hover{
+background-color:black;
+}
+
+.navbar li{
+float:left;
+}
+
+@media (max-width: 480px) {
+main
+.container,
+
+.navbar {
+	padding: 8px 0;
+}
+
+.navbar ul{
+	gap: 6px;
+	padding: 0 12px;
+}
+
+.navbar a{
+	padding: 8px 8px;
+	font-size: 0.8rem;
+}
+
+.pre{
+	font-size: 0.85rem;
+	line-height: 1.4;
+}
+
+}
